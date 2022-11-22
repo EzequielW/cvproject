@@ -6,7 +6,7 @@ import CircleIcon from '@mui/icons-material/Circle';
 function ProjectCard({project}) {
     return (
         <Paper sx={{ display: 'flex', flexDirection: 'column' }}>
-            <img height="300px" alt="project_image" src={project.image}></img>
+            <img height="250px" alt="project_image" src={project.image}></img>
             <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', p: 4 }}>
                 <Box sx={{ pb: 4 }}>
                     <Typography variant='h5' sx={{ pb: 2 }}>{ project.name }</Typography>
