@@ -2,6 +2,7 @@ import { Paper, Box, Typography, Link } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import CircleIcon from '@mui/icons-material/Circle';
+import langColors from '../util/github-lang-colors';
 
 function ProjectCard({project}) {
     return (
@@ -16,9 +17,10 @@ function ProjectCard({project}) {
                     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
                         {
                             project.techStack.map(stack => {
+                                const circleColor = (langColors[stack.name] ? langColors[stack.name] : stack.color);
                                 return (
                                     <Box sx={{ pr: 4, display: 'flex', alignItems: "center" }} key={stack.id}>
-                                        <CircleIcon sx={{ color: stack.color, fontSize: 14 }}/>
+                                        <CircleIcon sx={{ color: circleColor, fontSize: 14 }}/>
                                         <Typography sx={{ pl: 1, fontSize: 14, fontWeight: 550 }}>{ stack.name }</Typography>
                                     </Box>
                                 );

@@ -18,11 +18,16 @@ function Home() {
                 },
                 {
                     id: 2,
+                    name: "JavaScript",
+                    color: "#1DE9B6"
+                },
+                {
+                    id: 3,
                     name: "Node",
                     color: "#43A047"
                 },
                 {
-                    id: 3,
+                    id: 4,
                     name: "MongoDB",
                     color: "#1B5E20"
                 }
