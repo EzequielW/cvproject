@@ -29,12 +29,20 @@ function ProjectCard({project}) {
                     </Box>
                 </Box>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
-                    <Link href={project.liveDemo} underline="none" sx={{ display: 'flex', alignItems: 'center', pr: 4 }} target="_blank" rel="noopener">
-                        <OpenInNewIcon />Live Demo
-                    </Link>
-                    <Link href={project.repository} underline="none" sx={{ display: 'flex', alignItems: 'center' }} target="_blank" rel="noopener">
-                        <GitHubIcon />Github repository
-                    </Link>
+                    {
+                        project.liveDemo && (
+                            <Link href={project.liveDemo} underline="none" sx={{ display: 'flex', alignItems: 'center', pr: 4 }} target="_blank" rel="noopener">
+                                <OpenInNewIcon />Live Demo
+                            </Link>
+                        )
+                    }
+                    {
+                        project.repository && (
+                            <Link href={project.repository} underline="none" sx={{ display: 'flex', alignItems: 'center' }} target="_blank" rel="noopener">
+                                <GitHubIcon />Github repository
+                            </Link>
+                        )
+                    }
                 </Box>
             </Box>
         </Paper>

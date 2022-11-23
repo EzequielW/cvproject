@@ -8,7 +8,7 @@ function Home() {
     const projects = [
         {
             id: 1,
-            name: "Tech Blog",
+            name: "SCTech",
             image: project1Img,
             techStack: [
                 {
@@ -18,19 +18,19 @@ function Home() {
                 },
                 {
                     id: 2,
-                    name: "JavaScript",
-                    color: "#1DE9B6"
-                },
-                {
-                    id: 3,
                     name: "Node",
                     color: "#43A047"
                 },
                 {
-                    id: 4,
+                    id: 3,
                     name: "MongoDB",
                     color: "#1B5E20"
-                }
+                },
+                {
+                    id: 4,
+                    name: "JavaScript",
+                    color: "#1DE9B6"
+                },
             ],
             description: "Tech site where each user can post new content, includes user login, comments, text editor and more.",
             repository: "https://github.com/EzequielW/VueBlog",
@@ -38,94 +38,127 @@ function Home() {
         },
         {
             id: 2,
-            name: "Tech Blog",
+            name: "Free Market",
             image: project1Img,
             techStack: [
                 {
                     id: 1,
-                    name: "Vue",
+                    name: "Java",
                     color: "#1DE9B6"
                 },
                 {
                     id: 2,
-                    name: "Node",
-                    color: "#43A047"
+                    name: "MySQL",
+                    color: "#00758f"
                 },
                 {
                     id: 3,
-                    name: "MongoDB",
+                    name: "JavaScript",
                     color: "#1B5E20"
+                },
+                {
+                    id: 4,
+                    name: "React",
+                    color: "#61dbfb"
                 }
             ],
-            description: "Tech site where each user can post new content, includes user login, comments, text editor and more.",
+            description: "Ecommerce site listing available products, allowing filtering and search for ease of use. Includes payment integration and shipment options.",
             repository: "https://github.com/EzequielW/VueBlog",
             liveDemo: "https://sctechblog.netlify.app/"
         },
         {
             id: 3,
-            name: "Tech Blog",
+            name: "Pawst Me",
             image: project1Img,
             techStack: [
                 {
                     id: 1,
-                    name: "Vue",
+                    name: "Java",
                     color: "#1DE9B6"
                 },
                 {
                     id: 2,
-                    name: "Node",
+                    name: "Kotlin",
                     color: "#43A047"
                 },
                 {
                     id: 3,
-                    name: "MongoDB",
-                    color: "#1B5E20"
+                    name: "MySQL",
+                    color: "#00758f"
+                },
+                {
+                    id: 4,
+                    name: "Android",
+                    color: "#3DDC84"
                 }
             ],
-            description: "Tech site where each user can post new content, includes user login, comments, text editor and more.",
+            description: "Social network built on kotlin for the app and Spring Boot for the server, allows users to make posts about their pets and share information about missing pets.",
             repository: "https://github.com/EzequielW/VueBlog",
             liveDemo: "https://sctechblog.netlify.app/"
         },
         {
             id: 4,
-            name: "Tech Blog",
+            name: "Balarama Engine",
             image: project1Img,
             techStack: [
                 {
                     id: 1,
-                    name: "Vue",
+                    name: "C++",
                     color: "#1DE9B6"
                 },
                 {
                     id: 2,
-                    name: "Node",
+                    name: "C",
+                    color: "#43A047"
+                }
+            ],
+            description: "Chess engine built on c++ using bit masks for better performance and alpha-beta pruning/minimax for move search.",
+            repository: "https://github.com/EzequielW/VueBlog"
+        },
+        {
+            id: 5,
+            name: "Chip 8",
+            image: project1Img,
+            techStack: [
+                {
+                    id: 1,
+                    name: "Rust",
+                    color: "#1DE9B6"
+                }
+            ],
+            description: "Chip 8 emulator built on Rust mostly for learning purposes, it includes some roms to play.",
+            repository: "https://github.com/EzequielW/VueBlog"
+        },
+        {
+            id: 6,
+            name: "Coffee Developments",
+            image: project1Img,
+            techStack: [
+                {
+                    id: 1,
+                    name: "HTML",
+                    color: "#1DE9B6"
+                },
+                {
+                    id: 2,
+                    name: "JavaScript",
                     color: "#43A047"
                 },
                 {
                     id: 3,
-                    name: "MongoDB",
-                    color: "#1B5E20"
-                },
-                {
-                    id: 4,
-                    name: "Vue",
+                    name: "CSS",
                     color: "#1DE9B6"
                 },
                 {
-                    id: 5,
-                    name: "Node",
-                    color: "#43A047"
+                    id: 4,
+                    name: "Bootstrap",
+                    color: "#563d7c"
                 },
-                {
-                    id: 6,
-                    name: "MongoDB",
-                    color: "#1B5E20"
-                }
             ],
-            description: "Tech site where each user can post new content, includes user login, comments, text editor and more.",
+            description: "Simple design for a company landing page.",
             repository: "https://github.com/EzequielW/VueBlog",
             liveDemo: "https://sctechblog.netlify.app/"
-        }
+        },
     ]
 
     return (
