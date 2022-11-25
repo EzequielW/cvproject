@@ -1,8 +1,10 @@
-import { Grid, Container } from '@mui/material'; 
+import { Grid, Container , Typography, Box, Button } from '@mui/material'; 
 
 import project1Img from "../assets/img/project1.png";
 
 import ProjectCard from "./ProjectCard";
+import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 
 function Home() {
     const projects = [
@@ -163,7 +165,21 @@ function Home() {
 
     return (
         <div>
-            <Container sx={{ py: 4 }} maxWidth='xl'>
+            <Container sx={{ height: '100vh', display: 'flex', alignItems: 'center' }}>
+                <Box>
+                    <Typography variant="h1" gutterBottom>
+                        Test title heading 1
+                    </Typography>
+                    <Typography variant="subtitle1" gutterBottom sx={{ maxWidth: 500 }}>
+                        Something long as a subtitle 1 something long as a subtitle 1
+                        Something long as a subtitle 1 something long as a subtitle 1
+                    </Typography>
+                    <Button sx={{ mt: 3 }} variant="outlined" size='large'>
+                        Contact me
+                    </Button>
+                </Box>
+            </Container>
+            <Container sx={{ py: 6 }} maxWidth='xl'>
                 <Grid container columnSpacing={3} rowSpacing={4}>
                     {
                         projects.map(project => {
@@ -176,6 +192,10 @@ function Home() {
                     }
                 </Grid>
             </Container>
+            <Box sx={{ py: 6 }}>
+                <ContactForm />
+            </Box>
+            <Footer />
         </div>
     );
 }
