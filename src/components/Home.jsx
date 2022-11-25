@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 import { Grid, Container , Typography, Box, Button } from '@mui/material'; 
 
 import project1Img from "../assets/img/project1.png";
@@ -161,7 +163,9 @@ function Home() {
             repository: "https://github.com/EzequielW/VueBlog",
             liveDemo: "https://sctechblog.netlify.app/"
         },
-    ]
+    ];
+    const contactRef = useRef(null);
+    const executeScroll = () => contactRef.current.scrollIntoView({ behavior: 'smooth' });
 
     return (
         <div>
@@ -174,7 +178,7 @@ function Home() {
                         Something long as a subtitle 1 something long as a subtitle 1
                         Something long as a subtitle 1 something long as a subtitle 1
                     </Typography>
-                    <Button sx={{ mt: 3 }} variant="outlined" size='large'>
+                    <Button sx={{ mt: 3 }} variant="outlined" size='large' onClick={executeScroll}>
                         Contact me
                     </Button>
                 </Box>
@@ -192,8 +196,8 @@ function Home() {
                     }
                 </Grid>
             </Container>
-            <Box sx={{ py: 6 }}>
-                <ContactForm />
+            <Box sx={{ py: 6 }} ref={contactRef}>
+                <ContactForm/>
             </Box>
             <Footer />
         </div>
